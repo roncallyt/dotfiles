@@ -8,10 +8,14 @@ nnoremap("<leader>ff", "<cmd>Telescope find_files<CR>")
 nnoremap("<leader>fg", "<cmd>Telescope live_grep<CR>")
 nnoremap("<leader>fb", "<cmd>Telescope buffers<CR>")
 nnoremap("<leader>fh", "<cmd>Telescope help_tags<CR>")
+nnoremap("<leader>a", "<cmd>lua require('harpoon.mark').add_file()<CR>")
+nnoremap("<leader>h", "<cmd>lua require('harpoon.ui').toggle_quick_menu()<CR>")
+nnoremap("<leader>o", "<cmd>lua require('harpoon.ui').nav_prev()<CR>")
+nnoremap("<leader>i", "<cmd>lua require('harpoon.ui').nav_next()<CR>")
 
-vnoremap("<leader>y", "\"+y");
+vnoremap("<leader>y", "\"+y")
 
-nnoremap("<leader>p", "\"+p");
-nnoremap("<leader>P", "\"+P");
-vnoremap("<leader>p", "\"+p");
-vnoremap("<leader>P", "\"+P");
+nnoremap("<leader>p", "\"+p")
+nnoremap("<leader>P", "\"+P")
+vnoremap("<leader>p", "\"+p")
+vnoremap("<leader>P", "\"+P")

@@ -104,6 +104,16 @@ _G.packer_plugins = {
     path = "/home/t7n/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "/home/t7n/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
+  },
+  harpoon = {
+    loaded = true,
+    path = "/home/t7n/.local/share/nvim/site/pack/packer/start/harpoon",
+    url = "https://github.com/ThePrimeagen/harpoon"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/t7n/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -158,6 +168,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/t7n/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["vrello.nvim"] = {
+    loaded = true,
+    path = "/home/t7n/.local/share/nvim/site/pack/packer/start/vrello.nvim",
+    url = "https://github.com/roncallyt/vrello.nvim"
   }
 }
 
