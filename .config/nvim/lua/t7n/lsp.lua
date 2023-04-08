@@ -8,6 +8,11 @@ lspconfig.intelephense.setup {
     capabilities = capabilities,
 }
 
+lspconfig.java_language_server.setup {
+    cmd = { 'java_language_server' },
+    capabilities = capabilities
+}
+
 lspconfig.vuels.setup {
     capabilities = capabilities,
 }
