@@ -9,7 +9,10 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+set $fm eDP-1
+set $sm HDMI-1-0
 set $mod Mod4
+set $modAlt Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -117,6 +120,28 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
+# Define workspace outputs
+workspace 1 output $fm
+workspace 2 output $fm
+workspace 3 output $fm
+workspace 4 output $fm
+workspace 5 output $fm
+workspace 6 output $fm
+workspace 7 output $fm
+workspace 8 output $fm
+workspace 9 output $fm
+workspace 10 output $fm
+workspace 11 output $sm
+workspace 12 output $sm
+workspace 13 output $sm
+workspace 14 output $sm
+workspace 15 output $sm
+workspace 16 output $sm
+workspace 17 output $sm
+workspace 18 output $sm
+workspace 19 output $sm
+workspace 20 output $sm
+
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1"
@@ -129,6 +154,16 @@ set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
+set $ws11 "11"
+set $ws12 "12"
+set $ws13 "13"
+set $ws14 "14"
+set $ws15 "15"
+set $ws16 "16"
+set $ws17 "17"
+set $ws18 "18"
+set $ws19 "19"
+set $ws20 "20"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -141,6 +176,16 @@ bindsym $mod+7 workspace number $ws7
 bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
+bindsym $modAlt+1 workspace number $ws11
+bindsym $modAlt+2 workspace number $ws12
+bindsym $modAlt+3 workspace number $ws13
+bindsym $modAlt+4 workspace number $ws14
+bindsym $modAlt+5 workspace number $ws15
+bindsym $modAlt+6 workspace number $ws16
+bindsym $modAlt+7 workspace number $ws17
+bindsym $modAlt+8 workspace number $ws18
+bindsym $modAlt+9 workspace number $ws19
+bindsym $modAlt+0 workspace number $ws20
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
@@ -153,6 +198,16 @@ bindsym $mod+Shift+7 move container to workspace number $ws7
 bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
+bindsym $modAlt+Shift+1 move container to workspace number $ws11
+bindsym $modAlt+Shift+2 move container to workspace number $ws12
+bindsym $modAlt+Shift+3 move container to workspace number $ws13
+bindsym $modAlt+Shift+4 move container to workspace number $ws14
+bindsym $modAlt+Shift+5 move container to workspace number $ws15
+bindsym $modAlt+Shift+6 move container to workspace number $ws16
+bindsym $modAlt+Shift+7 move container to workspace number $ws17
+bindsym $modAlt+Shift+8 move container to workspace number $ws18
+bindsym $modAlt+Shift+9 move container to workspace number $ws19
+bindsym $modAlt+Shift+0 move container to workspace number $ws20
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
