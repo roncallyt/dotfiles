@@ -13,17 +13,17 @@ return require('packer').startup(function(use)
   -- Lualine
   use {
     'nvim-lualine/lualine.nvim',
-    requires = { 
-      'kyazdani42/nvim-web-devicons', 
-      opt = true 
+    requires = {
+      'kyazdani42/nvim-web-devicons',
+      opt = true
     }
   }
 
   -- Telescope
   use {
-    'nvim-telescope/telescope.nvim', 
+    'nvim-telescope/telescope.nvim',
     tag = '0.1.x',
-    requires = { 
+    requires = {
       'nvim-lua/plenary.nvim'
     }
   }
@@ -31,27 +31,26 @@ return require('packer').startup(function(use)
   -- Telescope: FZF Extension
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
-  -- LSP
   use {
-    'neovim/nvim-lspconfig',
+    'VonHeikemen/lsp-zero.nvim',
+    branch = 'v2.x',
     requires = {
-      'williamboman/mason.nvim',
-      'williamboman/mason-lspconfig.nvim'
+      -- LSP Support
+      {'neovim/nvim-lspconfig'},             -- Required
+      {                                      -- Optional
+        'williamboman/mason.nvim',
+        run = function()
+          pcall(vim.cmd, 'MasonUpdate')
+        end,
+      },
+      {'williamboman/mason-lspconfig.nvim'}, -- Optional
+
+      -- Autocompletion
+      {'hrsh7th/nvim-cmp'},     -- Required
+      {'hrsh7th/cmp-nvim-lsp'}, -- Required
+      {'L3MON4D3/LuaSnip'},     -- Required
     }
   }
-
-  -- Autocompletion
-  use {
-    'hrsh7th/nvim-cmp',
-    requires = {
-      'hrsh7th/cmp-nvim-lsp',
-      'L3MON4D3/LuaSnip',
-      'saadparwaiz1/cmp_luasnip'
-    }
-  }
-
-  use 'hrsh7th/cmp-buffer'
-  use 'hrsh7th/cmp-path'
 
   -- Treesitter
   use {
@@ -67,8 +66,6 @@ return require('packer').startup(function(use)
   use 'nvim-lua/plenary.nvim'
   use 'roncallyt/vrello.nvim'
   use 'ThePrimeagen/harpoon'
-
-  use 'github/copilot.vim'
-
   use 'tpope/vim-fugitive'
+  use 'mbbill/undotree'
 end)

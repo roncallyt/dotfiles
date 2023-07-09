@@ -16,6 +16,12 @@ vim.opt.smartindent = true
 
 vim.opt.wrap = false
 
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undofile = true
+
+vim.opt.scrolloff = 8
+vim.opt.colorcolumn = "80"
+
 vim.g.mapleader = " "
 
 vim.api.nvim_create_autocmd("FileType", {
@@ -90,8 +96,17 @@ vim.api.nvim_create_autocmd("FileType", {
     end
 })
 
-vim.api.nvim_create_autocmd("FileType", {
+vim.api.nvim_create_autocmd("filetype", {
     pattern = "lua",
+    callback = function()
+        vim.opt_local.shiftwidth = 2
+        vim.opt_local.tabstop = 2
+        vim.opt_local.softtabstop = 2
+    end
+})
+
+vim.api.nvim_create_autocmd("filetype", {
+    pattern = "vue",
     callback = function()
         vim.opt_local.shiftwidth = 2
         vim.opt_local.tabstop = 2

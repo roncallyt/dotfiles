@@ -19,7 +19,7 @@ telescope.setup {
     layout_config = {
       prompt_position = 'top',
     },
-    
+
     disable_devicons = true
   },
 
