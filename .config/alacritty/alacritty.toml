@@ -2,7 +2,8 @@
 TERM = "xterm-256color"
 
 [window]
-padding = { x = 0, y = 0 }
+padding = { x = 5, y = 5 }
+opacity = 0.9
 
 [font]
 normal = { family = "JetBrains Mono Nerd Font", style = "Regular" }
@@ -10,5 +11,5 @@ bold = { family = "JetBrains Mono Nerd Font", style = "Bold" }
 italic = { family = "JetBrains Mono Nerd Font", style = "Italic" }
 bold_italic = { family = "JetBrains Mono Nerd Font", style = "Bold Italic" }
 size = 12.00
-glyph_offset = { x = 1, y = 0 }
-offset = { x = 0, y = 1 }
+glyph_offset = { x = 0, y = 0 }
+offset = { x = 0, y = 0 }
