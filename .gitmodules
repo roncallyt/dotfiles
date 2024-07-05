@@ -1,3 +1,6 @@
 [submodule ".dotfiles/submodules/tableplus"]
 	path = .dotfiles/submodules/tableplus
 	url = https://github.com/roncallyt/tableplus
+[submodule ".dotfiles/submodules/shell-scripts"]
+	path = .dotfiles/submodules/shell-scripts
+	url = https://github.com/roncallyt/shell-scripts
