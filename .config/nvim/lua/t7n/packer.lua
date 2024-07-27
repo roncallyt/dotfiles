@@ -31,6 +31,8 @@ return require('packer').startup(function(use)
   -- Telescope: FZF Extension
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
+  use { "L3MON4D3/LuaSnip", run = "make install_jsregexp" }
+
   use {
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v2.x',
@@ -65,7 +67,15 @@ return require('packer').startup(function(use)
 
   use 'nvim-lua/plenary.nvim'
   use 'roncallyt/vrello.nvim'
-  use 'ThePrimeagen/harpoon'
+
+  use {
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    requires = { {"nvim-lua/plenary.nvim"} }
+  }
+
   use 'tpope/vim-fugitive'
   use 'mbbill/undotree'
+
+  use 'wakatime/vim-wakatime'
 end)

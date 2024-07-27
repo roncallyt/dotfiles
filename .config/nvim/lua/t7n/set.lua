@@ -1,5 +1,7 @@
 vim.cmd [[set mouse=]]
 
+vim.o.termguicolors = true
+
 vim.opt.guicursor = ""
 
 vim.opt.nu = true
@@ -26,6 +28,15 @@ vim.g.mapleader = " "
 
 vim.api.nvim_create_autocmd("FileType", {
     pattern = "javascript",
+    callback = function()
+        vim.opt_local.shiftwidth = 2
+        vim.opt_local.tabstop = 2
+        vim.opt_local.softtabstop = 2
+    end
+})
+
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "typescript",
     callback = function()
         vim.opt_local.shiftwidth = 2
         vim.opt_local.tabstop = 2
