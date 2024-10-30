@@ -7,8 +7,8 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
-  -- Carbon Theme
-  use 'michaeldyrynda/carbon.vim'
+  -- Catppuccin Theme
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   -- Lualine
   use {

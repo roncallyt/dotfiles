@@ -79,10 +79,10 @@ _G.packer_plugins = {
     path = "/home/t7n/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["carbon.vim"] = {
+  catppuccin = {
     loaded = true,
-    path = "/home/t7n/.local/share/nvim/site/pack/packer/start/carbon.vim",
-    url = "https://github.com/michaeldyrynda/carbon.vim"
+    path = "/home/t7n/.local/share/nvim/site/pack/packer/start/catppuccin",
+    url = "https://github.com/catppuccin/nvim"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
