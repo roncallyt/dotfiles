@@ -13,7 +13,8 @@ lsp.ensure_installed({
   'sqlls',
   'volar',
   'yamlls',
-  'tailwindcss'
+  'tailwindcss',
+  'lua_ls',
 })
 
 -- Fix Undefined global 'vim'

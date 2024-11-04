@@ -1,4 +1,4 @@
-require("t7n.packer")
+require("t7n.lazy")
 require("t7n.set")
 require("t7n.lualine")
 require("t7n.telescope")
